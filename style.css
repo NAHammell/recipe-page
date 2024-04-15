@@ -50,6 +50,10 @@ h1, h2 {
     font-weight: 400;
 }
 
+h1 {
+    color: hsl(24, 5%, 18%);
+}
+
 h2 {
     margin-bottom: 20px;
 }
@@ -64,6 +68,7 @@ hr {
 
 li {
     margin: 8px 4px;
+    padding-left: 8px;
 }
 
 p, li, h3, th, td, caption {
@@ -74,13 +79,27 @@ p, caption, th {
     font-weight: 400;
 }
 
+p, li, b, caption, th {
+    color: hsl(30, 10%, 34%);
+}
+
 li b, td {
     font-weight: 600;
 }
 
-h3 {
+h3, #prep-section li::marker {
     font-weight: 700;
+    color: hsl(332, 51%, 32%);
 }
+
+h2, td, li::marker {
+    color: hsl(14, 45%, 36%);
+}
+
+li::marker {
+    font-weight: 600;
+}
+
 
 .container {
     display: flex;
@@ -93,9 +112,12 @@ h3 {
 }
 
 #prep-section {
-    width: 94%;
+    width: 100%;
     align-self: center;
     margin-bottom: 24px;
+    background-color: hsl(330, 100%, 98%);
+    border-radius: 12px;
+    padding: 24px;
 }
 
 #prep-section ul,
