@@ -1,3 +1,6 @@
+/* Import Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+
 /* CSS Reset */
 html {
     box-sizing: border-box;
@@ -42,6 +45,11 @@ header p {
     margin-bottom: 24px;
 }
 
+h1, h2 {
+    font-family: 'Young Serif', sans-serif;
+    font-weight: 400;
+}
+
 h2 {
     margin-bottom: 20px;
 }
@@ -58,11 +66,27 @@ li {
     margin: 8px 4px;
 }
 
+p, li, h3, th, td, caption {
+    font-family: 'Outfit';
+}
+
+p, caption, th {
+    font-weight: 400;
+}
+
+li b, td {
+    font-weight: 600;
+}
+
+h3 {
+    font-weight: 700;
+}
+
 .container {
     display: flex;
     flex-direction: column;
     gap: 12px;
-    width: 40%;
+    width: 35%;
     border-radius: 20px;
     padding: 24px;
     background-color: hsl(0, 0%, 100%);
@@ -92,6 +116,10 @@ li {
     width: 100%;
 }
 
+#nutrition-section caption {
+    margin-bottom: 16px;
+}
+
 #nutrition-section table th {
     text-align: start;
 }
@@ -100,7 +128,7 @@ li {
 #nutrition-section table td {
     width: 50%;
     padding: 12px;
-    padding-left: 48px;
+    padding-left: 32px;
     border-bottom: 1px solid hsl(30, 18%, 87%);
 }
 
